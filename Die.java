@@ -1,6 +1,6 @@
 
 /**
- * This class will roll two six-sided dice (for whatever purpose apparently)..
+ * This class will roll two six-sided dice.
  *
  * @author Kylie Kishi
  * @version 2020-1-14
@@ -23,14 +23,26 @@ public class Die
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * The rollOne method rolls the first six-sided die.
+     * 
+     * @return d1 the result of the first die
      */
-    public int rollOne(int y)
+    public int rollOne()
     {
         // put your code here
-        return x + y;
+        d1 = (int) (Math.random() * 6 + 1);
+        return d1;
+    }
+    
+    /**
+     * The rollTwo method rolls the second six-sided die.
+     * 
+     * @return d2 the result of the second die
+     */
+    public int rollTwo()
+    {
+        // put your code here
+        d2 = (int) (Math.random() * 6 + 1);
+        return d2;
     }
 }
